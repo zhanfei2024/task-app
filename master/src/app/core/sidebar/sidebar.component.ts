@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+@Input()
 
 @Component({
   selector: 'app-sidebar',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-
+  currentDay = new Date().getDate();
+  currentDayIndex = `day${this.currentDay}`;
   constructor() { }
 
   ngOnInit() {
   }
-
 }

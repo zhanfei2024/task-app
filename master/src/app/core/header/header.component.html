@@ -1,3 +1,8 @@
-<p>
-  header works!
-</p>
+<md-toolbar color="accent">
+  <button md-icon-button (click)="openSidebar()">
+    <md-icon>menu</md-icon>
+  </button>
+  <span>task-app</span>
+  <span class="fill-remaining-sapce"></span>
+  <md-slide-toggle (change)="onChange($event)">黑夜模式</md-slide-toggle>
+</md-toolbar>
